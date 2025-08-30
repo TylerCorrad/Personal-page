@@ -1,0 +1,289 @@
+/* ==============================
+   Color Variables
+================================= */
+:root {
+  --indigo: rgb(34, 80, 231);
+  --indigo2: rgb(62, 107, 255);
+  --blue: rgb(53, 154, 248);
+  --sat-blue: rgb(22, 162, 255);
+  --off-white: rgb(214, 227, 255);
+  --off-black: rgb(17, 23, 36);
+  --light-blue: rgb(154, 206, 255);
+  --light-indigo: rgb(129, 173, 255);
+  --dark-blue: rgb(8, 21, 97);
+}
+
+/* ==============================
+   Base Styles
+================================= */
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+  color: var(--off-black);
+  font-family: "Roboto", sans-serif;
+  background-color: var(--off-black);
+}
+
+/* ==============================
+   Typography
+================================= */
+p,
+li {
+  color: var(--off-white);
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+h3 {
+  color: var(--off-black);
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+
+.title1 {
+  font-weight: 100;
+  font-size: 4rem;
+}
+
+.title2 {
+  font-style: italic;
+  font-family: sans-serif;
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+
+.skillset-title {
+  text-align: center;
+  font-size: 1.6rem;
+  margin-bottom: 30px;
+}
+.quantico-regular {
+  font-family: "Quantico", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.quantico-bold {
+  font-family: "Quantico", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.quantico-regular-italic {
+  font-family: "Quantico", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.quantico-bold-italic {
+  font-family: "Quantico", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+.featurette-heading {
+  margin-bottom: 20px;
+}
+
+#footer-text {
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+/* ==============================
+   Layout Utilities
+================================= */
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.container-fluid {
+  display: flow-root;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.featurette {
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 40px;
+}
+
+/* ==============================
+   Sections
+================================= */
+#header {
+  background-image: linear-gradient(to right, var(--dark-blue), var(--blue));
+  width: 100%;
+  padding: 20px 20% 50px;
+}
+
+#intro-section {
+  position: relative;
+}
+
+#skills {
+  background-image: linear-gradient(to right, var(--dark-blue), var(--blue));
+  padding-top: 2rem;
+}
+
+#skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 4rem;
+  width: 100%;
+  padding: 50px 6%;
+  height: fit-content;
+}
+
+#skills-title {
+  text-align: center;
+  width: 100%;
+}
+
+#projects-title {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+  width: 100%;
+}
+
+#aboutMe {
+  margin-top: 50px;
+  text-align: center;
+  width: 100%;
+  padding: 20px 0;
+  background-image: linear-gradient(to right, var(--dark-blue), var(--blue));
+}
+#aboutMe-container {
+  padding: 20px 20%;
+}
+#aboutMe-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* ==============================
+   Components
+================================= */
+/* --- Images --- */
+#picture {
+  border-radius: 50%;
+  border: solid var(--blue) 7px;
+}
+
+.side-img {
+  position: absolute;
+  top: 0;
+  width: 30%;
+  max-width: 500px;
+  height: auto;
+}
+
+.side-img.left {
+  left: 0px;
+}
+
+.side-img.right {
+  right: 0;
+}
+
+.side-img.btm-left {
+  top: 10px;
+  left: 20px;
+}
+
+.side-img.btm-right {
+  top: 10px;
+  right: 20px;
+}
+
+.image-container {
+  width: 400px;
+  height: 400px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5%;
+  box-shadow: var(--dark-blue) 5px 5px 20px;
+}
+
+/* --- Lists --- */
+ul {
+  width: 100%;
+  max-width: 100%;
+  text-align: start;
+  list-style-type: circle;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+#technical-container li {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.li-title {
+  font-weight: 600;
+}
+
+.li-desc {
+  font-weight: 350;
+}
+
+/* --- Buttons --- */
+.custom-button {
+  color: var(--blue);
+  border-color: var(--blue);
+}
+
+.custom-button:active,
+.custom-button:hover {
+  background-color: var(--blue);
+  color: var(--off-white);
+  border-color: var(--blue);
+}
+
+/* --- Hyperlinks -- */
+.project-link {
+  font-size: 1.7rem;
+  margin-left: 2rem;
+  color: var(--indigo2);
+  font-weight: 600;
+}
+.project-link:hover,
+.project-link:active {
+  color: var(--light-indigo);
+}
+
+.mail-link {
+  font-size: 1.5rem;
+  margin-left: 2rem;
+  color: var(--dark-blue);
+  font-weight: 600;
+}
+.mail-link:hover,
+.mail-link:active {
+  color: var(--sat-blue);
+}
+
+/* ==============================
+   Helpers / Utilities
+================================= */
+.white {
+  color: var(--off-white);
+}
+
+.dark {
+  color: var(--dark-blue);
+}
+
+.blue {
+  color: var(--indigo2);
+}
